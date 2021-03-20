@@ -19,12 +19,19 @@
        /*Formatando Strings
        s.length -->Quantos caracteres a string tem
        s.toUpperCase() --> Tudo para 'MAIÚSCULAS'
-       stoLowerCase() -->Tudo para 'minúsculas'
+       s.toLowerCase() -->Tudo para 'minúsculas'
        */
         
     var nome= prompt('Qual é seu nome?')
-    document.write(`Seu nome tem ${nome.length} letras`)
-    /*Video TRATAMENTO DE DADOS - CURSO JAVASCRIPT #06 TEMPO-->30:03/39:15*/
+
+    //Usar crase ao invés de aspas
+    document.write(` Olá <strong>${nome}!</strong> Seu nome tem ${nome.length} letras</br>`)//Placeholder --> ${nome da variavel}
+
+    document.write(`Olá ${nome.toUpperCase()}</br>`)
+
+    document.write(`Olá ${nome.toLowerCase()}`)
+    
+    /*TRATAMENTO DE DADOS - CURSO JAVASCRIPT 6 32:40 - 39:15*/
     </script>
 </body>
 </html>
