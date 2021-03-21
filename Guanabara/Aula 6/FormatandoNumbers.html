@@ -16,10 +16,27 @@
 <body>
     
    <script>
-       var n1 = Number.parseInt(prompt('Insira um número'))
+        var n1 = Number.parseFloat(prompt('Insira um número decimal'))//Capturar valor e converter string para number
 
-      document.write(`O número inserido foi ${n1}`)
+        document.write(`O seu número é ${n1}</br>`)//Exibe o número inserido
+
+        document.write(`Veja seu número com 2 casas decimais: ${n1.toFixed(2)}</br>`)//Deixa o número com duas casas decimais
+
+        document.write(`Veja seu número com 3 casas decimais: ${n1.toFixed(3)}</br>`)//Deixa o número com três casas decimais
+
+        /*O replace troca elementos que serão exibidos, ('elemento que será trocado' , 'Elemento que será posto no lugar')
+
+        No exemplo abaixo trocamos o ponto pela vírgula*/
+        document.write(`Veja seu número com vírgula ao invés de ponto: ${n1.toFixed(2).replace('.' , ',')}`)
       
+        /*Comando para usar no terminal (node)
+
+            Exibe o número em forma de salário------>
+
+                n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        Pode-se mudar o BRL para US ou outras moedas para obter resultados de outros países
+        */ 
 
     </script>
 </body>
